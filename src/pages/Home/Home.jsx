@@ -6,7 +6,8 @@ import { selectLogin, selectUser } from 'redux/selectors';
 const Home = () => {
   const isLogin = useSelector(selectLogin);
   const { name } = useSelector(selectUser);
-  // return isLogin ? (
+  return isLogin
+  //   ? (
   //   <WrapperHP>
       
   //   </WrapperHP>
